@@ -273,6 +273,10 @@ body {
   border-radius: 50%;
 }
 
+.user-navigation-link-accent {
+  opacity: 0.3;
+}
+
 /*Popover*/
 
 .popover {

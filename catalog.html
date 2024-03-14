@@ -15,7 +15,7 @@
         <img class="logo" src="../images/logo.svg" width="145" height="36" alt="Логотип магазина Девайс">
       </a>
 
-      <nav class="main-navigation">
+      <div class="navigation">
 
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search">
@@ -27,28 +27,87 @@
 
         <ul class="user-navigation inner-user-navigation">
           <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Коля Петухов</a>
+            <a class="user-navigation-link user-link" href="#">Коля Петухов</a>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-link-accent" href="#">Выйти</a>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Сравнить</a>
+            <a class="user-navigation-link compare-link" href="#">Сравнить</a>
           </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">
+          <li class="user-navigation-item cart-item">
+            <a class="user-navigation-link cart-link" href="#">
               <span class="user-navigation-link-counter">2</span>
               Корзина
             </a>
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-link">
+                      <img class="popover-img" src="../images/cart/selfie-cart.jpg" width="39" height="43" alt="">
+                      <span class="popover-title">Любительская<br> селфи-палка</span>
+                    </a>
+                    <button class="popover-delete-button" type="button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link">
+                      <img class="popover-img" src="../images/cart/selfie-prof-cart.jpg" width="39" height="43" alt="">
+                      <span class="popover-title">Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="popover-delete-button" type="button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-total">
+                  <p class="popover-total-products">Товаров: 2</p>
+                  <p class="popover-total-price">Сумма: 2000 ₽</p>
+                </div>
+              </div>
+              <a class="popover-button" href="#">Открыть корзину</a>
+            </div>
           </li>
         </ul>
-
-        <ul class="main-navigation">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link catalog-navigation" href="#">
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item catalog-navigation">
+            <a class="main-navigation-link catalog-navigation-link" href="#">
               Каталог товаров
-              <span class="visually-hidden">Открыть каталог товаров</span>
+              <span class="catalog-navigation-button"></span>
             </a>
+            <div class="subcatalog-container">
+              <div class="subcatalog">
+                <ul class="subcatalog-list">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="catalog.html">Моноподы для cелфи</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Экшн-камеры
+                    </a>
+                  </li>
+                </ul>
+                <ul class="subcatalog-list">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="subcatalog-list">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="#">Доставка</a>
@@ -60,35 +119,6 @@
             <a class="main-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-
-        <div class="catalog-navigation-container visually-hidden">
-          <ul class="catalog-list catalog-list-column">
-            <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#" aria-current="page">Моноподы для cелфи</a>
-            </li>
-            <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">Экшн-камеры
-              </a>
-            </li>
-          </ul>
-          <ul class="catalog-list catalog-list-column">
-            <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="catalog-list catalog-list-column">
-            <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
-
       </nav>
     </div>
   </header>
