@@ -900,7 +900,8 @@ body {
   display: block;
 
   margin: 0;
-  padding: auto;0
+  padding: auto;
+  0
 }
 
 .categories-link:hover .categories-img {
@@ -915,3 +916,144 @@ body {
   opacity: 0.3;
 }
 
+/*Services*/
+
+.services {
+  background-color: #F0F0F0;
+  margin-top: 190px;
+  margin-bottom: 70px;
+  padding-bottom: 72px;
+}
+
+.services-container {
+  padding: 0 15px;
+}
+
+.services-wrapper {
+  display: flex;
+  transform: translateY(-40px);
+}
+
+.services-navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 116px;
+}
+
+.services-navigation::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -63px;
+  min-height: 320px;
+  width: 7px;
+  background-color: #000000;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.services-item-current {
+  background-color: #000000;
+  padding-right: 120px;
+}
+
+.services-button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+  padding: 10px;
+  padding-left: 15px;
+  width: 153px;
+}
+
+.services-button-current {
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.services-button-current::after {
+  background-color: transparent;
+}
+
+.services-button-current:hover {
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.services-button-current:active {
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.services-button-current:active::after {
+  background-color: #000000;
+}
+
+.services-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-content {
+  position: relative;
+  padding-right: 63px;
+}
+
+.services-title {
+  padding-top: 12px;
+  margin-bottom: 34px;
+}
+
+.services-text {
+  max-width: 452px;
+}
+
+.services-content:first-child .services-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 136px;
+  height: 164px;
+  background-image: url("../images/services/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 16px;
+  right: -180px;
+}
+
+.services-content:nth-child(2) .services-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 136px;
+  height: 164px;
+  background-image: url("../images/services/garanty.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 16px;
+  right: -180px;
+}
+
+.services-content:nth-child(3) .services-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 136px;
+  height: 164px;
+  background-image: url("../images/services/credit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 16px;
+  right: -180px;
+}
