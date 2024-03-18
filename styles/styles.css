@@ -901,8 +901,7 @@ body {
   display: block;
 
   margin: 0;
-  padding: auto;
-  0
+  padding: 0 auto;
 }
 
 .categories-link:hover .categories-img {
@@ -1057,4 +1056,89 @@ body {
   background-position: center;
   top: 16px;
   right: -180px;
+}
+
+/*Order button*/
+
+.order-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 70px;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+  background-color: #F0F0F0;
+
+  cursor: pointer;
+}
+
+.order-icon {
+  position: relative;
+
+  width: 125px;
+  height: 100px;
+
+  background-color: #FFE17F;
+}
+
+.order-icon::after {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+
+  width: 47px;
+  height: 31px;
+
+  background-image: url(../images/icons/truck-icon.svg);
+  content: "";
+}
+
+.order-info {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 42px;
+
+  background-color: rgba(220, 220, 220, 0.50);
+  border-radius: 50%;
+}
+
+.order-info::before {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+
+  width: 5px;
+  height: 12px;
+
+  background-image: url(../images/icons/info-icon.svg);
+  opacity: 0.3;
+  content: "";
+}
+
+.order-button:hover .order-icon {
+  background-color: #FFC700;
+}
+
+.order-button:hover .order-info::before {
+  opacity: 1;
+}
+
+.order-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.order-button:active {
+  opacity: 0.3;
 }
