@@ -2003,4 +2003,18 @@ body {
 
 /*Product-list*/
 
+.product-list-container {
+  padding: 70px 40px;
+  background-color: #ffffff;
+}
 
+.product-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
+
+  list-style: none;
+}
