@@ -124,7 +124,7 @@
   </header>
   <main class="inner-page">
     <header class="inner-header">
-      <div class="container">
+      <div class="container inner-container">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -134,26 +134,26 @@
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#" aria-current="page">Моноподы для селфи</a>
+            <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
     </header>
     <section class="catalog-products">
-      <div class="container">
+      <div class="container catalog-container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h3 class="catalog-subtitle">Фильтр:</h3>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость</legend>
+            <legend class="catalog-filter-title catalog-price-title">Стоимость</legend>
 
             <div class="range">
               <div class="range-scale">
-                <div class="range-bar" style="">
-                  <button class="range-toggle toggle-min">
+                <div class="range-bar" style="left: 0; width: 119px">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену</span>
                   </button>
                 </div>
@@ -230,11 +230,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-filter-button button">Показать</button>
+          <button class="catalog-filter-button button" type="button">Показать</button>
         </form>
         <div class="catalog-right-column">
           <div class="sorting-container">
-            <h3 class="catalog-subtitle">Сортировка:</h3>
+            <h3 class="catalog-subtitle sorting-subtitle">Сортировка:</h3>
             <select class="catalog-select" aria-label="Сортировка">
               <option value="popular">Популярные</option>
               <option value="cheap">Дешевые</option>
