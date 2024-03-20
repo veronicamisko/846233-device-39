@@ -2087,7 +2087,7 @@ body {
 .catalog-button:hover {
   color: #ffffff;
   background-color: #000000;
-  border: none;
+  border: 3px solid #000000;
 }
 
 .catalog-button:focus-visible {
